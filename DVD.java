@@ -22,6 +22,7 @@ public class DVD extends Produto {
 	}
 	
 	
+	//metódo construtor passando como parâmetro os atributos da classe DVD e super classe Produto.
 	public DVD(int codigo,String nome,double preco,int duracao) {
 		super(codigo,nome,preco);
 		this.duracao = duracao;
