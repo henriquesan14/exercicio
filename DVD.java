@@ -11,7 +11,7 @@ public class DVD extends Produto {
 		this.duracao = duracao;
 	}
 
-	@Override
+	@Override // metódo toString sobrescrito pra mostrar todos atributos, inclusives o da superClasse Produto.
 	public String toString() {
 		return "DVD [codigo: " + getCodigo() + "][nome: " + getNome() + "][preco: " + getPreco() + "][duracao: " + duracao + " min]";
 	}
@@ -20,7 +20,8 @@ public class DVD extends Produto {
 	public double valorDesconto(){
 		return super.getPreco()*0.05;
 	}
-
+	
+	
 	public DVD(int codigo,String nome,double preco,int duracao) {
 		super(codigo,nome,preco);
 		this.duracao = duracao;
