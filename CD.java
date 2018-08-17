@@ -11,7 +11,7 @@ public class CD extends Produto	 {
 		this.numFaixas = numFaixas;
 	}
 
-	@Override
+	@Override // metódo toString sobrescrito pra mostrar todos atributos, inclusives o da superClasse.
 	public String toString() {
 		return "CD [codigo: " + getCodigo() + "][nome: " + getNome() + "][preco: " + getPreco() + "][numFaixas: " + numFaixas + "]";
 	}
