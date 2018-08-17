@@ -56,7 +56,7 @@ public class Produto {
 		return result;
 	}
 
-	@Override
+	@Override //Verifica se o atributo 'codigo' do objeto Produto é igual ao do objeto passando por parâmetro.
 	   public boolean equals(Object o) {
 	      boolean result = false;
 	      if (this.getCodigo() == ((Produto)o).getCodigo()) {
