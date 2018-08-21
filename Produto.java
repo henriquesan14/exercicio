@@ -1,5 +1,5 @@
 
-public class Produto {
+public abstract class Produto {
 	private String nome;
 	private double preco;
 	private int codigo;
@@ -33,9 +33,8 @@ public class Produto {
 		this.preco = preco;
 	}
 	
-	public double valorDesconto(){
-		return this.preco*0.02;
-	}
+	public abstract double valorDesconto();
+		
 
 	public Produto(int codigo,String nome, double preco) {
 		super();
