@@ -23,5 +23,9 @@ public class Livro extends Produto {
 		this.autor = autor;
 	}
 	
+	public double valorDesconto(){
+		return super.getPreco()*0.02;
+	}
+	
 
 }
